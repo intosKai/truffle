@@ -17,7 +17,8 @@
   "scripts": {
     "build": "tsc",
     "prepare": "yarn build",
-    "test": "yarn build && mocha --exit -r ts-node/register test/**/*.test.ts"
+    "test": "yarn build && mocha --exit -r ts-node/register test/**/*.test.ts",
+    "test:e2e": "yarn build && mocha --exit -r ts-node/register test/**/*.e2e.ts"
   },
   "types": "dist/index.d.ts",
   "dependencies": {
@@ -32,7 +33,7 @@
     "ethereum-protocol": "^1.0.1",
     "ethereumjs-util": "^7.1.5",
     "web3": "1.10.0",
-    "web3-provider-engine": "16.0.3"
+    "web3-provider-engine": "16.0.7"
   },
   "devDependencies": {
     "@types/bip39": "^2.4.2",
